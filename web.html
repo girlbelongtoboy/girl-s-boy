@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+<title>校园线上商城</title>
+<style type="text/css">
+h1{
+	font-family: "华文行楷",sans-serif;
+	color:OrangeRed;
+}
+form{
+	font-size:30px;
+	font-family:"华文行楷",sans-serif;
+	height: 300px;
+	width:400px;
+	position: absolute;
+	top:20%;
+	left:40%;
+	border-radius: 10px;                  /*把边角变成圆形,radius是半径    */
+	border:2px solid black;
+}
+form label{
+	font-size:25px;
+}
+a{                      /*使行内元素块状化*/
+	display: block;
+	position: relative;
+	left:75%;
+	bottom: 8%;           /*不太能明白，是否能有更好的方法*/
+	font-size: 22px
+}
+h1 img{
+	width:50px;
+	height:50px;
+	position:relative;
+	top:17px;
+}
+</style>
+<head>
+<body bgcolor="AliceBlue">
+ <h1><img src="https://gss1.bdstatic.com/9vo3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike116%2C5%2C5%2C116%2C38/sign=a093ff82972bd40756cadbaf1ae0f534/0b55b319ebc4b745ea1ed6bccffc1e178b821595.jpg">广东海洋大学校园线上商城</h1><br/>
+ <form method="post" action="save.php">                                                  <!--是否可以如此简单集中-->
+ <div class="Login"><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;用户登陆/Login</div><br/>              <!--重温input知识-->
+ <label for="username">&nbsp;&nbsp;&nbsp;用户名:</label>
+ <input type="text" name="username" id="username" value=""/>                          <!--可以使用垂直居中等办法，无需使用如此多的空格?-->
+ <a href="http://210.38.137.126:8016/default2.aspx" title="注册账号" >注册账号</a>                    <!--如何使其对齐输入框,如何使起作用-->
+ <label for="pass">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;密码:</label>
+ <input type="password" name="pass" id="pass" value=""/><br/>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="确定" name="submit"/>&nbsp;&nbsp;&nbsp;&nbsp;                  <!--如何使确定按钮好看些-->
+ <input type="reset" value="重置" name="reset"/>
+</form>
+<body>
+<html>
